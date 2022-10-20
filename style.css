@@ -1,59 +1,65 @@
 *{
   margin: 0;
-  padding: none; 
-  border: none;
+  padding: 0; 
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
 }
 
 body{
   background: #E5E5E5;
+  min-width: 250px;
 }
 
 body::before{
   content:'';
   position: absolute;
   width: 100%;
-  height: 436px;
-  top: 0;
+  height: 43.6rem;
+  top: -10rem;
   background: #535971;
   z-index: -1;
 }
 
 .page{
-  width: 750px;
+  width: 90%;
   margin: 0 auto;
-  box-sizing: border-box;
 }
 
 header{
-  width: 360px;
-  margin-top: 140px;
+  width: 90%;
+  margin-top: 5rem;
+  padding-left: 3rem;
 }
 
 header h1{
   font-family: 'Staatliches', cursive;
   font-weight: 400;
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 4.8rem;
+  line-height: 6rem;
   color: #FFFFFF;
-  margin-bottom: 18px;
+  margin-bottom: 1.8px;
 }
 
 header p{
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 2rem;
+  line-height: 3rem;
   color: #FFFFFF;
-  margin-bottom: 45px;
+  margin-bottom: 4.5rem;
 }
 
 form{
-  padding: 64px;
+  padding: 3rem;
   background: #FFFFFF;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 2rem 2rem 0rem 0rem;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 2rem;
 }
 
 fieldset{
@@ -61,19 +67,19 @@ fieldset{
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1.6rem;
 }
 
 legend{
   font-family: 'Staatliches', cursive;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 34px;
+  font-size: 2rem;
+  line-height: 3.4rem;
   color: #535971;
 
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
   border-bottom: 1px solid #d4d4dc;
-  margin-bottom: 36px;
+  margin-bottom: 1.5rem;
   width: 100%;
 }
 
@@ -84,113 +90,140 @@ legend{
   
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
   color: #4E4958;
 }
 
 label{
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 label span{
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 1.2rem;
+  line-height: 2rem;
   color: #C1BCCC;
-  margin-left: 10px;
+  margin-left: 1rem;
 }
 
 input{
   background: #FAFAFC;
   border: 1px solid #d4d4dc;
   border-radius: 8px;
-  height: 56px;
+  padding: 1rem;
   width: 100%;
   box-sizing: border-box;
   
-  padding-left: 15px;
+  padding-left: 1.5rem;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
   color: #4E4958;
+  font-family: 'Poppins', sans-serif;
 }
 
 #persons-full-name{
   display: flex;
-  flex-direction: row;
-  gap: 22px;
+  flex-direction: column;
+  gap: 1.6rem;
   width: 100%;
-}
-
-#first-mentorship, #second-mentorship{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 fieldset h2{
   font-family: 'Staatliches', cursive;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 34px;
+  font-size: 2rem;
+  line-height: 3.4rem;
   color: #535971;
-  margin-bottom: 8px;
-}
-
-.date{
-  display: flex;
-  flex-direction: row;
-  width: 300px;
-}
-
-.time{
-  display: flex;
-  flex-direction: row;
-  gap:10px;
-}
-
-.time .input-wrapper{
-  width: 140px;
+  margin-bottom: 4px;
 }
 
 footer{
   width: 100%;
-  height: 160px;
+  height: 10rem;
+  padding: 3rem;
   background: #535971;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 0rem 0rem 2rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  margin-bottom: 200px;
+  margin-bottom: 10rem;
 }
 
 footer #buttom{
   background: #FF5374;
-  border-radius: 20px;
-  width: 600px;
+  border-radius: 2rem;
+  width: 100%;
   border: none;
 
   font-family: 'Staatliches', cursive;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 2rem;
+  line-height: 2.6rem;
   color: #FFFFFF;
 }
 
-#buttom:hover{
-  scale:1.02;
-  background: #fc5e7e;
-}
-
 #buttom:active{
-  scale:0.99;
+  scale:0.95;
   background: #ff4268;
 }
 
 input:focus{
   border: 2px solid #6f6ffc;
   outline: none;
+}
+
+@media (min-width:500px){
+
+  header{
+    width: 40rem;
+  }
+
+  #first-mentorship, #second-mentorship{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  .date{
+    width: 50%;
+  }
+  
+  .time{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    width: 50%;
+  }
+
+  footer{
+    margin-bottom: 15rem;
+  }
+}
+
+@media (min-width:800px){
+
+  .page{
+    width: 72rem;
+  }
+
+  #persons-full-name{
+    display: flex;
+    flex-direction: row;
+    gap: 2.2rem;
+    width: 100%;
+  }
+
+  #buttom:hover{
+    scale:1.02;
+    background: #fc5e7e;
+  }
+
+  footer{
+    margin-bottom: 20rem;
+  }
 }
